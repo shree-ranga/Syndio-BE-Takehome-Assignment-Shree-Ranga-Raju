@@ -20,18 +20,35 @@
 ### Setup virtual environment
 
 1. Create virtual environment:
-   `python3 -m venv venv`
+
+```bash
+   python3 -m venv venv
+```
+
 2. Activate the virtual environment:
-   `source venv/bin/activate`
+
+```bash
+   source venv/bin/activate
+```
 
 ### Install Python dependencies
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 ### Run server
 
 1. Set the desired server port:
-   `export DJANGO_PORT=5000 #replace with your desired port`
+
+```bash
+   export DJANGO_PORT=5000 #replace with your desired port
+```
+
 2. Start the server:
-   `sh run.sh`
+
+```bash
+   sh run.sh
+```
+
 3. Navigate to `127.0.0.1:5000/pvalue?department=Engineering` to see the results!
