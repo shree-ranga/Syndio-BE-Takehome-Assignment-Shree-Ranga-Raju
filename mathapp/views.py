@@ -8,6 +8,7 @@ from mathapp.helper import calc_protected_class_pvalue
 
 class GetPValue(APIView):
     def get(self, request, *args, **kwargs):
+        # Get the department parameter from the query string
         department = request.query_params.get("department", None)
         if not department:
             return Response(
@@ -24,7 +25,7 @@ class GetPValue(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
-        # Filter the data for the specified department
+        # Filter employee data for the given department
         query = Employees.objects.filter(department=department)
         data = list(query.values())
         pvalue = calc_protected_class_pvalue(data=data)
