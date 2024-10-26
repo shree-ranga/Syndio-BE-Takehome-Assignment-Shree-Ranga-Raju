@@ -6,9 +6,16 @@
 
 1. Open your terminal
 2. Clone the repository:
-   `git clone https://github.com/shree-ranga/Syndio-BE-Takehome-Assignment-Shree-Ranga-Raju`
+
+```bash
+   git clone https://github.com/shree-ranga/Syndio-BE-Takehome-Assignment-Shree-Ranga-Raju
+```
+
 3. Navigate to the cloned project directory:
-   `cd Syndio-BE-Takehome-Assignment-Shree-Ranga-Raju`
+
+```bash
+   cd Syndio-BE-Takehome-Assignment-Shree-Ranga-Raju
+```
 
 ### Setup virtual environment
 
