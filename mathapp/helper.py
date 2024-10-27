@@ -7,6 +7,10 @@ import statsmodels.api as sm
 
 def calc_protected_class_pvalue(data: List) -> float:
     df = pd.DataFrame(data=data)
+    if df.empty:
+        return 0
+
+    df = df.dropna()  # removes any rows that contain at least one NaN value
 
     # Convert protected_class to dummy variables (for categorical data)
     df = pd.get_dummies(df, columns=["protected_class"], drop_first=True)
