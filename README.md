@@ -51,4 +51,4 @@ pip install -r requirements.txt
    sh run.sh
 ```
 
-3. Navigate to `127.0.0.1:5000/pvalue?department=Engineering` to see the results!
+3. Navigate to `127.0.0.1:{DJANGO_PORT}/pvalue?department=Engineering` to see the results!
